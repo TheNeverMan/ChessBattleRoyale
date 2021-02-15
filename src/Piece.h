@@ -1,6 +1,7 @@
 #ifndef PIECE_H
 #define PIECE_H
 #include "Player.h"
+
 //generic piece with isindesctructible bool, and eliminated() adn stuff
 
 namespace ChessBattleRoyale
