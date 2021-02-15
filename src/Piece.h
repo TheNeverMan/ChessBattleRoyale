@@ -2,13 +2,13 @@
 #define PIECE_H
 #include "Player.h"
 //generic piece with isindesctructible bool, and eliminated() adn stuff
-enum piece_color
-{
-  white,black
-};
+
 namespace ChessBattleRoyale
 {
-
+  enum piece_color
+  {
+    white,black
+  };
 class Piece
 {
 private:
@@ -17,7 +17,7 @@ private:
     bool isindestructible;
     bool waslastturninzone;
     Player* player;
-    piece_color Color;
+    piece_color Piece_Color;
 public:
     Piece(int xx,int yy, piece_color color, Player *playerr);
     ~Piece();
@@ -26,6 +26,7 @@ public:
     void Eliminated();
     int GetX();
     int GetY();
+    piece_color GetColor();
 };
 
 }

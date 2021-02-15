@@ -6,7 +6,7 @@ ChessBattleRoyale::Piece::Piece(int xx,int yy,piece_color color,Player *playerr)
 {
     x=xx;
     y=yy;
-    Color=color;
+    Piece_Color=color;
     player=playerr;
 }
 
@@ -37,6 +37,7 @@ int ChessBattleRoyale::Piece::GetX()
 {
     return x;
 }
+using namespace ChessBattleRoyale;
 piece_color ChessBattleRoyale::Piece::GetColor()
 {
   return Piece_Color;
