@@ -39,5 +39,5 @@ int ChessBattleRoyale::Piece::GetX()
 }
 piece_color GetColor()
 {
-  return color;
+  return Color;
 }
