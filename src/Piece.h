@@ -23,7 +23,7 @@ public:
     Piece(int xx,int yy, piece_color color, Player *playerr);
     ~Piece();
     virtual int* GetMoves()=0; //returns pointer to static int array of moves
-    bool Move(int x,int y);
+    bool Move(int x,int y,Game *game);
     void Eliminated();
     int GetX();
     int GetY();
