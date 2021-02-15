@@ -24,6 +24,7 @@ bool ChessBattleRoyale::Piece::Move(int x,int y)
     int acY = GetY();
     if(acX==x && acY==y)
     {
+      //we dont move
         return false;
     }
 
@@ -35,4 +36,8 @@ int ChessBattleRoyale::Piece::GetY()
 int ChessBattleRoyale::Piece::GetX()
 {
     return x;
+}
+piece_color GetColor()
+{
+  return color;
 }
