@@ -9,7 +9,12 @@ namespace ChessBattleRoyale
   {
     white,black
   };
+  enum whoami
+  {
+    Rook,Knight,Bishop,Queen,King,Pawn
+  };
   class Player;
+  class Piece;
 class Piece
 {
 private:
@@ -19,6 +24,7 @@ private:
     bool waslastturninzone;
     Player* player;
     piece_color Piece_Color;
+    whoami PieceType;
 public:
     Piece(int xx,int yy, piece_color color, Player *playerr);
     ~Piece();
@@ -28,6 +34,7 @@ public:
     int GetX();
     int GetY();
     piece_color GetColor();
+    whoami Whoami();
 };
 
 }
