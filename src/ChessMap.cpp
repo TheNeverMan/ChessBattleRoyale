@@ -10,9 +10,10 @@ ChessBattleRoyale::ChessMap::~ChessMap()
 }
 int *ChessBattleRoyale::ChessMap::GetMap()
 {
-  int *out = new int [8][8];
+  int *out = &TemplateMap[0][0];
   int i = 0;
   int a = 0;
+  /*
   while(i != 8)
   {
     while(a != 8)
@@ -22,5 +23,6 @@ int *ChessBattleRoyale::ChessMap::GetMap()
     }
     i = i + 1;
   }
+  */
   return out;//needs delete somewhere
 }
