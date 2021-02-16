@@ -31,7 +31,7 @@ private:
   int ZoneLowerY;
   int TurnCounter;
 public:
-    Piece* isEmptyTile(int x,int y);
+    Piece *isEmptyTile(int x,int y);
     void TakeTurn();
     void DeletePlayer(Player * playertoremove);
     bool isInZone(int x, int y);

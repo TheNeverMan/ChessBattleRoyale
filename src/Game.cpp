@@ -1,5 +1,5 @@
 #include "Game.h"
-
+class Piece;
 ChessBattleRoyale::Game::Game()
 {
   ZoneLowerX = 0;
@@ -12,7 +12,7 @@ ChessBattleRoyale::Game::Game()
 ChessBattleRoyale::Game::~Game()
 {
 }
-Piece *ChessBattleRoyale::Game::isEmptyTile(int x,int y)
+ChessBattleRoyale::Piece *ChessBattleRoyale::Game::isEmptyTile(int x,int y)
 {
   if(ChessBoard[x][y]!=NULL)
   {
@@ -22,5 +22,5 @@ Piece *ChessBattleRoyale::Game::isEmptyTile(int x,int y)
 }
 void ChessBattleRoyale::Game::AddPlayer(Player *playertoadd,Piece *piecetobeadded)
 {
-  
+
 }
