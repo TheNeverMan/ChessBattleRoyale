@@ -9,6 +9,7 @@ namespace ChessBattleRoyale
   {
     white,black
   };
+  class Player;
 class Piece
 {
 private:
@@ -22,7 +23,7 @@ public:
     Piece(int xx,int yy, piece_color color, Player *playerr);
     ~Piece();
     virtual int* GetMoves()=0; //returns pointer to static int array of moves
-    bool Move(int x,int y,Game *game);
+    bool Move(int x,int y);
     void Eliminated();
     int GetX();
     int GetY();
