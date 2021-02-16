@@ -1,6 +1,7 @@
 #ifndef PIECE_H
 #define PIECE_H
 #include "Player.h"
+#include "Game.h"
 //generic piece with isindesctructible bool, and eliminated() adn stuff
 
 namespace ChessBattleRoyale
@@ -15,6 +16,7 @@ namespace ChessBattleRoyale
   };
   class Player;
   class Piece;
+  class Game;
 class Piece
 {
 private:
@@ -29,7 +31,7 @@ public:
     Piece(int xx,int yy, piece_color color, Player *playerr);
     ~Piece();
     virtual int* GetMoves()=0; //returns pointer to static int array of moves
-    bool Move(int x,int y);
+    bool Move(int x,int y, Game *gameiamin);
     void Eliminated();
     int GetX();
     int GetY();

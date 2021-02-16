@@ -17,7 +17,7 @@ int *ChessBattleRoyale::Piece::GetMoves()
 {
     cout << "do nothing now" << endl;
 }
-bool ChessBattleRoyale::Piece::Move(int x,int y)// dumb bugfix due to conflicting header files
+bool ChessBattleRoyale::Piece::Move(int x,int y, Game *gameiamin)// dumb bugfix due to conflicting header files
 {
     //check if it is same tile
     int acX = GetX();
@@ -27,8 +27,7 @@ bool ChessBattleRoyale::Piece::Move(int x,int y)// dumb bugfix due to conflictin
       //we dont move
         return false;
     }
-    Game gameiamin = *player->GetGame();
-    Piece standing = gameiamin->isEmptyTile(x,y);
+    Piece standing = *gameiamin->isEmptyTile(x,y);
     if (standing == NULL)
     {
 
