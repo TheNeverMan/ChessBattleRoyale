@@ -27,8 +27,12 @@ bool ChessBattleRoyale::Piece::Move(int x,int y)// dumb bugfix due to conflictin
       //we dont move
         return false;
     }
-    Piece *standing; //=*player-> *game->isEmptyTile(x,y);
+    Game gameiamin = *player->GetGame();
+    Piece standing = gameiamin->isEmptyTile(x,y);
+    if (standing == NULL)
+    {
 
+    }
 }
 int ChessBattleRoyale::Piece::GetY()
 {
@@ -42,4 +46,8 @@ using namespace ChessBattleRoyale;
 piece_color ChessBattleRoyale::Piece::GetColor()
 {
   return Piece_Color;
+}
+whoami ChessBattleRoyale::Piece::Whoami()
+{
+  return PieceType;
 }

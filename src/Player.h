@@ -14,8 +14,9 @@ class Player
 private:
   string Name;
   Piece *mypiece;
-public:
   Game *gameiamin;
+public:
+  Game GetGame();
     Player();
     ~Player();
 
