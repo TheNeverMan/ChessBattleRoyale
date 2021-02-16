@@ -6,7 +6,7 @@ using namespace std;
 //generic player with virtual stuff
 namespace ChessBattleRoyale
 {
-
+class Game;
 class Player
 {
 private:
