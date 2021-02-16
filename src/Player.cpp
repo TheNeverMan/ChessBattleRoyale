@@ -1,15 +1,10 @@
 #include "Player.h"
-#include "Piece.h"
 #include "Game.h"
-class ChessBattleRoyale::Game;
+class Game;
 ChessBattleRoyale::Player::Player()
 {
 }
 
 ChessBattleRoyale::Player::~Player()
 {
-}
-Game ChessBattleRoyale::Player::GetGame()
-{
-  return gameiamin;
 }

@@ -16,7 +16,6 @@ private:
   Piece *mypiece;
   Game *gameiamin;
 public:
-  Game GetGame();
     Player();
     ~Player();
 
