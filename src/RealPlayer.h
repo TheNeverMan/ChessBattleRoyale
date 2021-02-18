@@ -8,7 +8,7 @@ namespace ChessBattleRoyale
 class RealPlayer : public Player
 {
 public:
-    RealPlayer();
+    RealPlayer(Game *gametobeaddedinto,Piece *mynewpiece);
     ~RealPlayer();
 
 };

@@ -16,7 +16,7 @@ private:
   Piece *mypiece;
   Game *gameiamin;
 public:
-    Player();
+    Player(Game *gametobeaddedinto,Piece *mynewpiece);
     ~Player();
 
 };
