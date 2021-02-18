@@ -27,7 +27,8 @@ bool ChessBattleRoyale::Piece::Move(int x,int y, Game *gameiamin)// dumb bugfix 
       //we dont move
         return false;
     }
-    Piece standing = *gameiamin->isEmptyTile(x,y);
+    Piece *standing = NULL;
+    *standing = *gameiamin->isEmptyTile(x,y);
     if (standing == NULL)
     {
 

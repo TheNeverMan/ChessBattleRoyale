@@ -2,18 +2,11 @@
 #define PIECE_H
 #include "Player.h"
 #include "Game.h"
+#include "PieceEnums.h"
 //generic piece with isindesctructible bool, and eliminated() adn stuff
 
 namespace ChessBattleRoyale
 {
-  enum piece_color
-  {
-    white,black
-  };
-  enum whoami
-  {
-    Rook,Knight,Bishop,Queen,King,Pawn
-  };
   class Player;
   class Piece;
   class Game;
