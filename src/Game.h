@@ -5,6 +5,7 @@
 #include "Piece.h"
 #include "ChessMap.h"
 #include "Gamemode.h"
+#include "PieceEnums.h"
 using namespace std;
 //instance of this class is created by frontend from gamemaker and this class coordinates entire game, with players and stuff
 namespace ChessBattleRoyale
@@ -35,7 +36,7 @@ public:
     void TakeTurn();
     void DeletePlayer(Player * playertoremove);
     bool isInZone(int x, int y);
-    void AddPlayer(Player *playertoadd,Piece *piecetobeadded); //should load automaticly to start pos
+    void AddPlayer(Player *playertoadd,Piece *piecetobeadded,ChessBattleRoyale::whoami piece_type, ChessBattleRoyale::piece_color newpiece_color); //should load automaticly to start pos
     Game();
     ~Game();
 

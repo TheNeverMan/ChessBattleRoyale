@@ -20,7 +20,12 @@ ChessBattleRoyale::Piece *ChessBattleRoyale::Game::isEmptyTile(int x,int y)
   }
   return NULL;
 }
-void ChessBattleRoyale::Game::AddPlayer(Player *playertoadd,Piece *piecetobeadded)
+using namespace ChessBattleRoyale;
+void ChessBattleRoyale::Game::AddPlayer(Player *playertoadd,Piece *piecetobeadded,/*piece arguments*/whoami piece_type, piece_color newpiece_color)
 {
-
+  switch(piece_type)
+  {
+    case Rook:
+    break;
+  }
 }
